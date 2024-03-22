@@ -82,7 +82,8 @@ footerFindUs: "Where To Find Us",
         "menu": "Products",
         "gallery": "Gallery",
         "blog": "Blog",
-        "contact": "Contact"
+        "contact": "Contact",
+        timezoneNote: "(All times are in GMT+1)"
 
   },
   fr: {
@@ -168,7 +169,8 @@ footerFindUs: "Where To Find Us",
     "menu": "Produits",
     "gallery": "Galerie",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    timezoneNote: "(Tous les horaires sont en GMT+1)"
   },
 };
 var defaultLanguage = "fr";
@@ -201,6 +203,7 @@ function switchLanguage(language) {
   
   function setDefaultLanguage() {
     switchLanguage(defaultLanguage);
+
 }
   
 setDefaultLanguage();  
