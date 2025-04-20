@@ -68,23 +68,36 @@ var translations = {
     contactSubtitle: "Contact Us",
     contactTitle: "Contact & Opening Hours",
     footerQuality: "Quality materials for your every need.",
-footerContactUs: "Contact Us",
-footerLinks: "Links",
-footerHome: "Home",
-footerAbout: "About",
-footerMenu: "Menu",
-footerGallery: "Gallery",
-footerBlog: "Blog",
-footerContact: "Contact",
-footerFindUs: "Where To Find Us",
-"home": "Home",
-        "about": "About",
-        "menu": "Products",
-        "gallery": "Gallery",
-        "blog": "Blog",
-        "contact": "Contact",
-        timezoneNote: "(All times are in GMT+1)"
+    footerContactUs: "Contact Us",
+    footerLinks: "Links",
+    footerHome: "Home",
+    footerAbout: "About",
+    footerMenu: "Menu",
+    footerGallery: "Gallery",
+    footerBlog: "Blog",
+    footerContact: "Contact",
+    footerFindUs: "Where To Find Us",
+    "home": "Home",
+    "about": "About",
+    "menu": "Products",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "contact": "Contact",
+    timezoneNote: "(All times are in GMT+1)",
 
+    // Add missing product section translations
+    "productSubtitle": "Our Products",
+    "productTitle": "Choose Quality, Buy Smart & Durable",
+    "productTitleSpan": "Buy Smart & Durable",
+    "*": "All",
+    "All": "All",
+    "loadingProducts": "Loading products...",
+    "noProductsFound": "No products found",
+    "tryDifferentSearch": "Try a different search term or browse by category",
+
+    // Product categories
+    "InoxToles": "Stainless Steel Sheets",
+    "TolesAluminium": "Aluminum Sheets"
   },
   fr: {
     TolePerforrée:"TÔLE PERFOREE 5/10 G 6/10 PETIT & GRAND TROU 2000X10000",
@@ -170,7 +183,21 @@ footerFindUs: "Where To Find Us",
     "gallery": "Galerie",
     "blog": "Blog",
     "contact": "Contact",
-    timezoneNote: "(Tous les horaires sont en GMT+1)"
+    timezoneNote: "(Tous les horaires sont en GMT+1)",
+
+    // Add missing product section translations
+    "productSubtitle": "Nos Produits",
+    "productTitle": "Choisissez la Qualité, Achetez Intelligent & Durable",
+    "productTitleSpan": "Achetez Intelligent & Durable",
+    "*": "Tout",
+    "All": "Tout",
+    "loadingProducts": "Chargement des produits...",
+    "noProductsFound": "Aucun produit trouvé",
+    "tryDifferentSearch": "Essayez un autre terme de recherche ou parcourez par catégorie",
+
+    // Product categories
+    "InoxToles": "Tôles Inox",
+    "TolesAluminium": "Tôles Aluminium"
   },
 };
 var defaultLanguage = "fr";
@@ -217,4 +244,4 @@ document.getElementById("switch-to-en").addEventListener("click", function() {
     switchLanguage("en");
 });
 
-  
+

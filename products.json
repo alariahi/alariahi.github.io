@@ -1,0 +1,421 @@
+[
+    {
+      "name": "Galvanized Square Tube",
+      "category": "Tubes",
+      "image": "assets/images/dish/1.png",
+      "dimensions": ["1.2-2.5mm"],
+      "availability": true
+    },
+    {
+      "name": "Fer Plat",
+      "category": "Fer_Marchands",
+      "image": "assets/images/dish/2.png",
+      "dimensions": [
+        "12x4cm", "12x6mm", "12x3mm", "14x6mm", "14x3mm", "14x4mm", "14x5mm", "15x5mm", "15x6mm",
+        "16x4mm", "16x5mm", "16x8mm", "20x3mm", "20x4mm", "20x5mm", "20x6mm", "20x8mm", "20x10mm",
+        "25x4mm", "25x5mm", "25x6mm", "25x8mm", "25x10mm", "30x4mm", "30x5mm", "30x6mm", "30x8mm",
+        "30x10mm", "30x15mm", "35x8mm", "35x15mm", "40x4mm", "40x5mm", "40x6mm", "40x10mm",
+        "40x12mm", "40x15mm", "40x20mm", "40x30mm", "50x4mm", "50x5mm", "50x6mm", "50x8mm",
+        "50x10mm", "50x12mm", "50x15mm", "50x20mm", "50x30mm", "60x5mm", "60x6mm", "60x8mm",
+        "60x10mm", "60x12mm", "60x15mm", "60x20mm", "60x40mm", "70x8mm", "70x10mm", "80x6mm",
+        "80x8mm", "80x10mm", "80x15mm", "80x20mm", "80x25mm", "100x6mm", "100x8mm", "100x10mm",
+        "100x12mm", "100x15mm", "100x20mm", "100x25mm", "120x5mm", "120x6mm", "120x8mm", "120x10mm",
+        "120x12mm", "120x15mm", "130x5mm", "130x8mm", "140x6mm", "140x8mm", "140x10mm", "140x12mm"
+      ],
+      "availability": true
+    },
+    {
+        "name": "Tube Inox",
+        "category": "Tubes",
+        "image": "assets/images/dish/4.png",
+        "dimensions": ["304L"],
+        "availability": true
+      },
+      {
+        "name": "Curved Curtain Blade",
+        "category": "Lames_Rideaux",
+        "image": "assets/images/dish/5.png",
+        "dimensions": ["5/10", "6/10", "7/10", "8/10"],
+        "availability": true
+      },
+      {
+        "name": "Stainless Steel Sheet 304 2B+PVC",
+        "category": "InoxToles",
+        "image": "assets/images/dish/6.png",
+        "dimensions": ["5/10", "6/10", "8/10", "10/10", "15/10", "20/10", "30/10"],
+        "availability": true
+      },
+      {
+        "name": "Leaf Spring",
+        "category": "Ressort",
+        "image": "assets/images/dish/7.png",
+        "dimensions": ["40 X 1.2", "40 X 1.5", "50 X 1.2", "50 X 1.5", "60 X 1.5"],
+        "availability": true
+      },
+      {
+        "name": "Sandwich Panels",
+        "category": "Panneaux_Sandwich",
+        "image": "assets/images/dish/8.png",
+        "dimensions": ["5CM", "6CM", "8CM"],
+        "availability": true
+      },
+      {
+        "name": "Perforated Sheets",
+        "category": "Toles",
+        "image": "assets/images/dish/9.png",
+        "dimensions": [
+          "TÔLE PERFOREE 5/10 G 6/10 PETIT & GRAND TROU 2000X10000"
+        ],
+        "availability": true
+      },
+      {
+        "name": "Iron Hea",
+        "category": "Poutrelles",
+        "image": "assets/images/dish/10.png",
+        "dimensions": {
+          "height": ["100-800 mm"],
+          "length": ["6ml", "12ml", "15ml"]
+        },
+        "availability": true
+      },
+      {
+        "name": "Strong Sheets",
+        "category": "Toles",
+        "image": "assets/images/dish/11.png",
+        "dimensions": {
+          "thickness": ["15-100 mm"],
+          "width": ["1000 mm", "1250 mm", "1500 mm", "2000 mm"]
+        },
+        "availability": true
+      },
+      
+        {
+          "name": "Galvanized Gratings",
+          "category": "Caillebotis",
+          "image": "assets/images/dish/12.png",
+          "dimensions": [
+            "34X38 BP 30X2 DIM 5800X1000",
+            "30 X 30 BP 30X2  DIM 2000 X 1000",
+            "34 X 38  BP 30X2   DIM 2000 X 1000"
+          ],
+          "available": true
+        },
+        {
+          "name": "LAF Round Tubes",
+          "category": "Tubes",
+          "image": "assets/images/dish/13.png",
+          "épaisseur": [
+            "0,9 mm à 1,5 mm"
+          ],
+          "diamètre": [
+            "16 mm à 50 mm"
+          ],
+          "available": true
+        },
+        {
+          "name": "Galvanized Rectangular Tubes",
+          "category": "Tubes",
+          "image": "assets/images/dish/15.png",
+          "épaisseur": [
+            "1,2 mm à 2 mm"
+          ],
+          "dimensions": [
+            "30 mm X 15 mm à 80 mm X 40 mm"
+          ],
+          "available": true
+        },
+        {
+          "name": "LAC Round Tubes",
+          "category": "Tubes",
+          "image": "assets/images/dish/16.png",
+          "diamètre": [
+            "102 mm",
+            "114 mm",
+            "133 mm",
+            "140 mm",
+            "158 mm",
+            "168 mm",
+            "219 mm"
+          ],
+          "available": true
+        },
+        {
+            "name": "Angle Iron",
+            "category": "Fer_Marchands",
+            "image": "assets/images/dish/18.png",
+            "filter": "Corniere",
+            "dimensions": [
+              "100 X 100 X 8 X 12 ML",
+              "100 X 100 X 8 X 6 ML",
+              "100 X 100 X 10 X 12 ML",
+              "100 X 100 X 10 X 6 ML",
+              "120 X 120 X 10 X 12 ML",
+              "120 X 120 X 12 X 6 ML",
+              "120 X 120 X 12 X 12 ML",
+              "150 X 150 X 15 X 6 ML",
+              "150 X 150 X 15 X 12.1 ML",
+              "20 X 20 X 2.1 X 6ML",
+              "20 X 20 X 2.3 X 6 ML",
+              "20 X 20 X 3 X 6 ML",
+              "25 X 25 X 2.3 X 6ML",
+              "25 X 25 X 2.5 X 6ML",
+              "25 X 25 X 3.0 X 6ML",
+              "30 X 30 X 2.3 X 6ML",
+              "30 X 30 X 2.7 X 6ML",
+              "30 X 30 X 3.0 X 6ML",
+              "35 X 35 X 3.0 X 6ML",
+              "35 X 35 X 3.5 X 6 ML",
+              "35 X 35 X 4.0 X 6 ML",
+              "40 X 40 X 3.0 X 6ML",
+              "40 X 40 X 4.0 X 6ML",
+              "45 X 45 X 3.0 X 6 ML",
+              "45 X 45 X 4.0 X 12ML",
+              "45 X 45 X 4.0 X 6 ML",
+              "45 X 45 X 4.5 X 6ML",
+              "50 X 50 X 4.0 X 12 ML",
+              "50 X 50 X 4.0 X 6.0 ML",
+              "50 X 50 X 5.0 X 12 ML",
+              "50 X 50 X 5.0 X 6ML",
+              "60 X 60 X 5.0 X 6 ML",
+              "60 X 60 X 5.0 X 12 ML",
+              "60 X 60 X 6.0 X 12 ML",
+              "60 X 60 X 6.0 X 6 ML",
+              "70 X 70 X 5.0 X 6 ML",
+              "70 X 70 X 7.0 X 12 ML",
+              "70 X 70 X 7.0 X 6 ML",
+              "75 X 75 X 6.0 X 12 ML",
+              "75 X 75 X 7.0 X 6 ML",
+              "80 X 80 X 10.0 X 12 ML",
+              "80 X 80 X 8.0 X 12 ML",
+              "80 X 80 X 8.0 X 6 ML",
+              "90 X 90 X 9.0 X 6 ML",
+              "90 X 90 X 9.0 X 12 ML"
+            ],
+            "lengths": [],
+            "available": true
+          },
+          {
+            "name": "IPE Iron",
+            "category": "Poutrelles",
+            "image": "assets/images/dish/19.png",
+            "filter": "FerIPE",
+            "dimensions": ["80-600 mm"],
+            "lengths": ["6ml", "12ml", "15ml"],
+            "available": true
+          },
+          {
+            "name": "HEB Iron",
+            "category": "Poutrelles",
+            "image": "assets/images/dish/20.png",
+            "filter": "FerHEB",
+            "dimensions": ["100-700 mm"],
+            "lengths": ["6ml", "12ml", "15ml"],
+            "available": true
+          },
+          {
+            "name": "UPN Iron",
+            "category": "Poutrelles",
+            "image": "assets/images/dish/21.png",
+            "filter": "FerUPN",
+            "dimensions": ["100-700 mm"],
+            "lengths": [], 
+            "available": true
+          },
+          {
+            "name": "Hot Rolled Tear Plates",
+            "image": "assets/images/dish/22.png",
+            "filter": "TolesLaminéesàChaudLarmées",
+            "dimensions": ["2.5/4.5", "3/5", "4/6", "5/7"]
+          },
+          {
+            "name": "LAF Plates",
+            "image": "assets/images/dish/23.png",
+            "filter": "TolesLAF",
+            "dimensions": [
+              "Du 5/10-20/10 LAR 1000",
+              "Du 5/10-20/10 LAR 1250",
+              "Du 5/10-20/10 LAR 1500"
+            ]
+          },
+          {
+            "name": "Galvanized Ribbed Plates",
+            "image": "assets/images/dish/24.png",
+            "filter": "TolesNervuréesGalvanisées",
+            "dimensions": ["4/10", "5/10", "6/10", "7/10"]
+          },
+          {
+            "name": "LAC Plates",
+            "image": "assets/images/dish/25.png",
+            "filter": "TolesLAC",
+            "dimensions": {
+              "Épaisseur": ["12-10->120-10 mm"],
+              "Largeur": ["1000 mm", "1250 mm", "1500 mm", "2000 mm"]
+            }
+          },
+          {
+            "name": "Galvanized Sheets",
+            "category": "Toles",
+            "image": "assets/images/dish/26.png",
+            "filters": ["TolesGalvanisées"],
+            "dimensions": {
+              "Épaisseur": ["3-10->30-10 mm"],
+              "Largeur": ["1000 mm", "1250 mm", "1500 mm"]
+            },
+            "available": true
+          },
+          {
+            "name": "Micro Ribbed Sheets",
+            "category": "Toles",
+            "image": "assets/images/dish/27.png",
+            "filters": ["TolesMicroNervurées"],
+            "dimensions": {
+              "Dimensions": ["5/10", "6/10", "7/10", "8/10"]
+            },
+            "available": true
+          },
+          {
+            "name": "Corrugated Sheets",
+            "category": "Toles",
+            "image": "assets/images/dish/28.png",
+            "filters": ["TolesOndulées"],
+            "dimensions": {
+              "Dimensions": ["0,3", "0,35", "0,4"]
+            },
+            "available": true
+          },
+          {
+            "name": "Striated Sheets",
+            "category": "Toles",
+            "image": "assets/images/dish/29.png",
+            "filters": ["TolesStriées"],
+            "dimensions": {
+              "Dimensions": ["2.5/4.5", "3/5", "4/6", "5/7", "6/8"]
+            },
+            "available": true
+          },
+          {
+            "name": "Aluminium DD Sheets",
+            "category": "TolesAluminium",
+            "image": "assets/images/dish/30.png",
+            "filters": ["TolesAluminiumD.D"],
+            "dimensions": {
+              "Dimensions": [
+                "6/10 2X1 AA1050 H24",
+                "8/10 2X1 AA1050 H24",
+                "10/10 2X1 AA1050 H24",
+                "12/10 2X1 AA1050 H24",
+                "15/10 2X1 AA1050 H24",
+                "20/10 2X1 AA1050 H24"
+              ]
+            },
+            "available": true
+          },
+          {
+            "name": "Aluminium Striated Sheets",
+            "category": "TolesAluminium",
+            "image": "assets/images/dish/31.png",
+            "filters": ["TolesAluminiumStriées"],
+            "dimensions": {
+              "Dimensions": ["1.5/2", "2/4", "3/5", "4/6"]
+            },
+            "available": true
+          },
+          {
+            "name": "LAC Square Tubes",
+            "category": "Tubes",
+            "image": "assets/images/dish/32.png",
+            "thickness": ["0,9 mm - 5mm"],
+            "dimensions": ["16-120"],
+            "availability": "Available"
+          },
+          {
+            "name": "LAF Square Tubes",
+            "category": "Tubes",
+            "image": "assets/images/dish/33.png",
+            "thickness": ["0,9mm-1,4mm"],
+            "dimensions": ["16-20"],
+            "availability": "Available"
+          },
+          {
+            "name": "LAC Rectangular Tubes",
+            "category": "Tubes",
+            "image": "assets/images/dish/34.png",
+            "thickness": ["1 mm - 5mm"],
+            "dimensions": ["30X15 - 150X50"],
+            "availability": "Available"
+          },
+          {
+            "name": "Round Iron",
+            "category": "Fer_Marchands",
+            "image": "assets/images/dish/35.png",
+            "rating": 4,
+            "thickness": null,
+            "dimensions": [
+              "6x6mL", "8x6mL", "10x6mL", "100x6mL", "11x6mL", "12x6mL", 
+              "14x6mL", "15x6mL", "16x6mL", "18x6mL", "20x6mL", "22x6mL", 
+              "25x6mL", "28x6mL", "29x6mL", "30x6mL", "32x6mL", "35x6mL", 
+              "40x6mL", "50x6mL", "60x6mL", "70x6mL", "80x6mL"
+            ],
+            "availability": "Available"
+          },
+          {
+            "name": "Square Iron",
+            "image": "assets/images/dish/36.png",
+            "category": "Fer_Marchands",
+            "dimensions": {
+              "volume": [
+                "8x8x6mL",
+                "9x9x6mL",
+                "10x10x6mL",
+                "11x11x6mL",
+                "12x12x6mL",
+                "14x14x6mL",
+                "16x16x6mL",
+                "20x20x6mL",
+                "25x25x6mL",
+                "30x30x6mL",
+                "40x40x6mL",
+                "50x50x6mL",
+                "60x60x6mL",
+                "80x80x6mL"
+              ]
+            },
+            "availability": "Available",
+            "button": "dish-add-btn btn btn-success"
+          },
+          {
+            "name": "T Iron",
+            "image": "assets/images/dish/37.png",
+            "category": "Fer_Marchands",
+            "dimensions": {
+              "dimension": [
+                "25 X 25 X 3.5",
+                "30 X 30 X 4.0",
+                "35 X 35 X 4.5",
+                "40 X 40 X 5.0",
+                "50 X 50 X 6.0",
+                "60 X 60 X 7.0"
+              ]
+            },
+            "availability": "Available",
+            "button": "dish-add-btn btn btn-success"
+          },
+          {
+            "name": "LAC Round Tubes",
+            "image": "assets/images/dish/38.png",
+            "category": "Tubes",
+            "dimensions": {
+              "diameter": [
+                "102",
+                "114",
+                "133",
+                "140",
+                "158",
+                "168",
+                "219"
+              ]
+            },
+            "availability": "Available",
+            "button": "dish-add-btn btn btn-success"
+          }
+]
