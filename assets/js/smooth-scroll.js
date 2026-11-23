@@ -48,9 +48,10 @@ function updateScroller() {
 
     if (resized) {
         var height = scroller.target.clientHeight;
-        var footerHeight = document.querySelector('footer') ? document.querySelector('footer').clientHeight : 300;
-        // Dynamic calculation to ensure footer is reachable
-        body.style.height = (height + footerHeight*2 + 100) + "px";
+        // Exact content height: upgrade.js re-measures whenever the content
+        // grows or shrinks, so the footer is always reachable without
+        // leaving empty space below it.
+        body.style.height = height + "px";
         scroller.resizeRequest = 0;
     }
 

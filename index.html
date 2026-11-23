@@ -25,10 +25,28 @@
   <link rel="stylesheet" href="style.css">
   <!-- product styles -->
   <link rel="stylesheet" href="product-styles.css">
+  <!-- UI upgrade layer -->
+  <link rel="stylesheet" href="upgrade.css">
+  <script>
+    (function (d) {
+      var h = d.documentElement; h.classList.add('pm-js');
+      try {
+        var th = localStorage.getItem('theme');
+        if (th === 'dark' || (!th && matchMedia('(prefers-color-scheme: dark)').matches)) h.classList.add('pm-dark');
+      } catch (e) {}
+      setTimeout(function () { h.classList.add('pm-loaded', 'pm-ready'); }, 4000);
+    })(document);
+  </script>
   <meta name="google-site-verification" content="Bh0hPUp9LQiDy7swmGs3ZSfKuRmcVV0qmLe-BwZG22Y" />
 </head>
 
 <body class="body-fixed">
+  <!-- preloader + scroll progress (upgrade.css / upgrade.js) -->
+  <div class="pm-preloader" aria-hidden="true">
+    <div class="pm-preloader__logo"><img src="logo.png" alt=""></div>
+    <div class="pm-preloader__bar"></div>
+  </div>
+  <div class="pm-progress" aria-hidden="true"></div>
   <!-- start of header  -->
   <header class="site-header">
     <div class="container">
@@ -92,7 +110,7 @@
                 <div class="banner-text">
                   <h1 class="h1-title">
                     <div data-filter="bannerWelcome">Welcome to</div>
-                    <span>Pro</span>Metal
+                    <span>Pro</span><em class="pm-steel">Metal</em>
                   </h1>
 
                   <p data-filter="bannerText">Explore our select range of metal and steel products,
@@ -101,12 +119,20 @@
                     Quality materials for your every need.</p>
                   <div class="banner-btn mt-4">
                     <a href="#menu" class="sec-btn" data-filter="bannerBtn">Check our Products</a>
+                    <a href="tel:+21699445680" class="pm-btn-call"><i class="uil uil-phone"></i><span data-pm-i18n="heroCall">Appeler</span> <small>99 445 680</small></a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="banner-img-wp">
                   <div class="banner-img" style="background-image: url(assets/images/main-b.jpeg);">
+                  </div>
+                  <div class="pm-badge" aria-hidden="true">
+                    <svg class="pm-badge__ring" viewBox="0 0 200 200">
+                      <defs><path id="pm-ring-path" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"></path></defs>
+                      <text><textPath href="#pm-ring-path" textLength="474" lengthAdjust="spacing" data-pm-i18n="badgeRing">ACIER • INOX • ALUMINIUM • DEPUIS 1990 • </textPath></text>
+                    </svg>
+                    <div class="pm-badge__core"><small data-pm-i18n="since">depuis</small><b>1990</b></div>
                   </div>
                 </div>
                 <div class="banner-img-text mt-4 m-auto">
@@ -117,8 +143,23 @@
         </div>
       </section>
 
-
-
+      <!-- category ticker -->
+      <section class="pm-ticker" aria-label="Familles de produits">
+        <div class="pm-ticker__band pm-ticker__band--red" aria-hidden="true">
+          <div class="pm-ticker__track"></div>
+        </div>
+        <div class="pm-ticker__band pm-ticker__band--navy">
+          <div class="pm-ticker__track">
+            <div class="pm-ticker__set">
+              <span class="pm-tick">Fer marchands</span><span class="pm-tick__sep">✦</span>
+              <span class="pm-tick">Poutrelles</span><span class="pm-tick__sep">✦</span>
+              <span class="pm-tick">Tôles</span><span class="pm-tick__sep">✦</span>
+              <span class="pm-tick">Tubes</span><span class="pm-tick__sep">✦</span>
+              <span class="pm-tick">Panneaux sandwich</span><span class="pm-tick__sep">✦</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <section class="about-sec section" id="about">
@@ -142,6 +183,16 @@
                   Discover the strength and durability that has been our promise for over three
                   decades.
                   Welcome to Prometal PM – where metal meets excellence.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 m-auto">
+              <div class="pm-stats">
+                <div class="pm-stat"><b>1990</b><span data-pm-i18n="statFounded">Année de création</span></div>
+                <div class="pm-stat"><b><span data-pm-count="35">35</span><i>+</i></b><span data-pm-i18n="statYears">Années d'expérience</span></div>
+                <div class="pm-stat"><b><span data-pm-count="8">8</span></b><span data-pm-i18n="statFamilies">Familles de produits</span></div>
+                <div class="pm-stat"><b>6<small>/7</small></b><span data-pm-i18n="statDays">Jours ouverts par semaine</span></div>
               </div>
             </div>
           </div>
@@ -264,14 +315,22 @@
               <div class="row align-items-center">
                   <div class="col-lg-4">
                       <div class="table-title text-center">
-                          <h3 data-filter="scheduleWeekdays">Monday to Thursday</h3>
-                          <p data-filter="scheduleWeekdaysTime1">8:00 am - 1:00 pm</p>
-                          <p data-filter="scheduleWeekdaysTime2">2:00 pm - 5:00 pm</p>
-                          <h3 data-filter="scheduleFriday">Friday</h3>
-                          <p data-filter="scheduleFridayTime1">8:00 am - 12:30 pm</p>
-                          <p data-filter="scheduleFridayTime2">2:00 pm - 5:00 pm</p>
-                          <h3 data-filter="scheduleSaturday">Saturday</h3>
-                          <p data-filter="scheduleSaturdayTime">8:00 am to 1:00 pm</p>
+                          <i class="uil uil-clock"></i>
+                          <div class="pm-status" id="pm-status" aria-live="polite"><span class="pm-status__dot"></span><span class="pm-status__text"></span></div>
+                          <div class="pm-day" data-days="1,2,3,4">
+                            <h3 data-filter="scheduleWeekdays">Monday to Thursday</h3>
+                            <p data-filter="scheduleWeekdaysTime1">8:00 am - 1:00 pm</p>
+                            <p data-filter="scheduleWeekdaysTime2">2:00 pm - 5:00 pm</p>
+                          </div>
+                          <div class="pm-day" data-days="5">
+                            <h3 data-filter="scheduleFriday">Friday</h3>
+                            <p data-filter="scheduleFridayTime1">8:00 am - 12:30 pm</p>
+                            <p data-filter="scheduleFridayTime2">2:00 pm - 5:00 pm</p>
+                          </div>
+                          <div class="pm-day" data-days="6">
+                            <h3 data-filter="scheduleSaturday">Saturday</h3>
+                            <p data-filter="scheduleSaturdayTime">8:00 am to 1:00 pm</p>
+                          </div>
                           <!-- Retain timezone note -->
                           <p style="text-align: center; font-style: italic;" data-filter="timezoneNote">(All times are in GMT+1)</p>
                       </div>
@@ -424,7 +483,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
-                <!-- Content here if any -->
+                <p class="pm-copy">© <span id="pm-year">2026</span> <b>ProMetal PM</b> · <span data-pm-i18n="footerAddr">Zone Industrielle Mégrine Saint Gobain, Ben Arous</span> · <span data-pm-i18n="rights">Tous droits réservés.</span></p>
               </div>
             </div>
             <button class="scrolltop"><i class="uil uil-angle-up"></i></button>
@@ -438,6 +497,18 @@
 
 
 
+
+  <!-- quick contact (upgrade.js) -->
+  <div class="pm-fab" id="pm-fab">
+    <div class="pm-fab__menu" id="pm-fab-menu">
+      <a class="pm-fab__item" href="tel:+21699445680"><span data-pm-i18n="fabCall">Appeler un commercial</span><i class="uil uil-phone"></i></a>
+      <a class="pm-fab__item" href="https://maps.google.com/?cid=8127802465394633928" target="_blank" rel="noopener"><span data-pm-i18n="fabMap">Itinéraire vers le dépôt</span><i class="uil uil-map-marker"></i></a>
+      <a class="pm-fab__item" href="#contact" data-pm-goto="#contact"><span data-pm-i18n="fabAll">Tous nos contacts</span><i class="uil uil-envelope"></i></a>
+    </div>
+    <span class="pm-fab__hint" data-pm-i18n="fabHint">Un devis ? Parlons-en</span>
+    <button class="pm-fab__btn" id="pm-fab-btn" type="button" aria-expanded="false" aria-controls="pm-fab-menu" data-pm-i18n-label="fabLabel" aria-label="Contact rapide"><i class="uil uil-comment-dots"></i><i class="uil uil-times"></i></button>
+  </div>
+  <button class="pm-top" id="pm-top" type="button" data-pm-i18n-label="top" aria-label="Haut de page"><i class="uil uil-arrow-up"></i></button>
 
   <!-- jquery  -->
   <script src="assets/js/jquery-3.5.1.min.js"></script>
@@ -483,6 +554,8 @@
   <script src="direct-display.js"></script>
   <!-- dark mode functionality -->
   <script src="dark-mode.js"></script>
+  <!-- UI upgrade layer -->
+  <script src="upgrade.js"></script>
 
 </body>
 </html>
