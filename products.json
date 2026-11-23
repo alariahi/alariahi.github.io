@@ -40,7 +40,8 @@
       },
       {
         "name": "Stainless Steel Sheet 304 2B+PVC",
-        "category": "InoxToles",
+        "name_fr": "Tôle Inox 304 2B+PVC",
+        "category": "Toles",
         "image": "assets/images/dish/6.png",
         "dimensions": ["5/10", "6/10", "8/10", "10/10", "15/10", "20/10", "30/10"],
         "availability": true
@@ -223,14 +224,20 @@
           },
           {
             "name": "Hot Rolled Tear Plates",
+            "name_fr": "Tôles Laminées à Chaud Larmées",
+            "category": "Toles",
             "image": "assets/images/dish/22.png",
             "filter": "TolesLaminéesàChaudLarmées",
+            "availability": true,
             "dimensions": ["2.5/4.5", "3/5", "4/6", "5/7"]
           },
           {
             "name": "LAF Plates",
+            "name_fr": "Tôles LAF",
+            "category": "Toles",
             "image": "assets/images/dish/23.png",
             "filter": "TolesLAF",
+            "availability": true,
             "dimensions": [
               "Du 5/10-20/10 LAR 1000",
               "Du 5/10-20/10 LAR 1250",
@@ -239,14 +246,20 @@
           },
           {
             "name": "Galvanized Ribbed Plates",
+            "name_fr": "Tôles Nervurées Galvanisées",
+            "category": "Toles",
             "image": "assets/images/dish/24.png",
             "filter": "TolesNervuréesGalvanisées",
+            "availability": true,
             "dimensions": ["4/10", "5/10", "6/10", "7/10"]
           },
           {
             "name": "LAC Plates",
+            "name_fr": "Tôles LAC",
+            "category": "Toles",
             "image": "assets/images/dish/25.png",
             "filter": "TolesLAC",
+            "availability": true,
             "dimensions": {
               "Épaisseur": ["12-10->120-10 mm"],
               "Largeur": ["1000 mm", "1250 mm", "1500 mm", "2000 mm"]
@@ -295,7 +308,8 @@
           },
           {
             "name": "Aluminium DD Sheets",
-            "category": "TolesAluminium",
+            "name_fr": "Tôles Aluminium D.D",
+            "category": "Toles",
             "image": "assets/images/dish/30.png",
             "filters": ["TolesAluminiumD.D"],
             "dimensions": {
@@ -312,7 +326,8 @@
           },
           {
             "name": "Aluminium Striated Sheets",
-            "category": "TolesAluminium",
+            "name_fr": "Tôles Aluminium Striées",
+            "category": "Toles",
             "image": "assets/images/dish/31.png",
             "filters": ["TolesAluminiumStriées"],
             "dimensions": {
@@ -395,24 +410,6 @@
                 "40 X 40 X 5.0",
                 "50 X 50 X 6.0",
                 "60 X 60 X 7.0"
-              ]
-            },
-            "availability": "Available",
-            "button": "dish-add-btn btn btn-success"
-          },
-          {
-            "name": "LAC Round Tubes",
-            "image": "assets/images/dish/38.png",
-            "category": "Tubes",
-            "dimensions": {
-              "diameter": [
-                "102",
-                "114",
-                "133",
-                "140",
-                "158",
-                "168",
-                "219"
               ]
             },
             "availability": "Available",

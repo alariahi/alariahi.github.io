@@ -876,6 +876,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update elements with data-filter attribute
     function updateDataFilterElements() {
+        // Use the shared translator from translations.js so headings keep
+        // their highlighted <span> parts instead of being flattened to text
+        if (typeof window.switchLanguage === 'function') {
+            window.switchLanguage(currentLanguage);
+            return;
+        }
         document.querySelectorAll('[data-filter]').forEach(el => {
             const filterKey = el.getAttribute('data-filter');
             if (window.translations && window.translations[currentLanguage] && window.translations[currentLanguage][filterKey]) {

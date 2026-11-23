@@ -53,7 +53,7 @@ var translations = {
     'bannerText': 'Explore our select range of metal and steel products, perfect for construction and industrial use: merchant bars, stainless steel, aluminum, galvanized sheets, pipes, and beams. Quality materials for your every need.',
     'bannerBtn': 'Check our Products',
     aboutSubTitle: "About Us",
-    aboutTitle: "Discover our Company story",
+    aboutTitle: "Discover our ",
     aboutSpan: "Company story",
     aboutDesc: "step into the world of Prometal PM, your trusted partner in metal and steel solutions since 1990. Nestled in the heart of Ben Arous region’s Industrial Zone Megrine Saint Gobain, we are not just a company; we are a legacy of quality and trust. Specializing in the importation and commercialization of a premium selection of metal and steel products, we are dedicated to building the future with you. Discover the strength and durability that has been our promise for over three decades. Welcome to Prometal PM – where metal meets excellence.",
     aboutWatch: "Watch",
@@ -72,7 +72,7 @@ var translations = {
     footerLinks: "Links",
     footerHome: "Home",
     footerAbout: "About",
-    footerMenu: "Menu",
+    footerMenu: "Products",
     footerGallery: "Gallery",
     footerBlog: "Blog",
     footerContact: "Contact",
@@ -87,7 +87,7 @@ var translations = {
 
     // Add missing product section translations
     "productSubtitle": "Our Products",
-    "productTitle": "Choose Quality, Buy Smart & Durable",
+    "productTitle": "Choose Quality, ",
     "productTitleSpan": "Buy Smart & Durable",
     "*": "All",
     "All": "All",
@@ -153,7 +153,7 @@ var translations = {
     'bannerText': 'Découvrez notre gamme sélectionnée de produits en métal et en acier, parfaite pour la construction et l\'utilisation industrielle : barres marchandes, acier inoxydable, aluminium, tôles galvanisées, tubes et poutres. Des matériaux de qualité pour tous vos besoins.',
     'bannerBtn': 'Vérifiez nos produits',
     aboutSubTitle: "À propos de nous",
-    aboutTitle: "Découvrez notre histoire d'entreprise",
+    aboutTitle: "Découvrez notre ",
     aboutSpan: "histoire d'entreprise",
     aboutDesc: "Entrez dans le monde de Prometal PM, votre partenaire de confiance pour les solutions en métal et en acier depuis 1990. Situé au cœur de la Zone Industrielle de Megrine Saint Gobain dans la région de Ben Arous, nous ne sommes pas seulement une entreprise ; nous sommes un héritage de qualité et de confiance. Spécialisés dans l'importation et la commercialisation d'une sélection premium de produits en métal et en acier, nous sommes dédiés à construire l'avenir avec vous. Découvrez la force et la durabilité qui ont été notre promesse pendant plus de trois décennies. Bienvenue chez Prometal PM – là où le métal rencontre l'excellence.",
     aboutWatch: "Regarder",
@@ -172,7 +172,7 @@ var translations = {
     footerLinks: "Liens",
     footerHome: "Accueil",
     footerAbout: "À propos",
-    footerMenu: "Menu",
+    footerMenu: "Produits",
     footerGallery: "Galerie",
     footerBlog: "Blog",
     footerContact: "Contact",
@@ -187,7 +187,7 @@ var translations = {
 
     // Add missing product section translations
     "productSubtitle": "Nos Produits",
-    "productTitle": "Choisissez la Qualité, Achetez Intelligent & Durable",
+    "productTitle": "Choisissez la Qualité, ",
     "productTitleSpan": "Achetez Intelligent & Durable",
     "*": "Tout",
     "All": "Tout",
@@ -212,20 +212,29 @@ function switchLanguage(language) {
   
       // Check if translation exists for the language and filter key
       if (translations[language] && translations[language][filter]) {
-        // Remove existing text nodes to prevent duplication
-        Array.from(element.childNodes).forEach(function(node) {
-          if (node.nodeType === Node.TEXT_NODE) {
+        // Replace the element's own text in place (keeps it before child elements
+        // like a highlighted <span>), and drop any other loose text nodes
+        var textNodes = Array.from(element.childNodes).filter(function(node) {
+          return node.nodeType === Node.TEXT_NODE;
+        });
+        var target = textNodes.find(function(node) {
+          return node.nodeValue.trim() !== "";
+        });
+        textNodes.forEach(function(node) {
+          if (node !== target) {
             element.removeChild(node);
           }
         });
-  
-        // Add new text node with the translation
-        var newText = document.createTextNode(translations[language][filter]);
-        element.appendChild(newText);
+        if (target) {
+          target.nodeValue = translations[language][filter];
+        } else {
+          element.appendChild(document.createTextNode(translations[language][filter]));
+        }
       } else {
         console.error("Translation not found for: " + filter);
       }
     });
+    document.documentElement.lang = language;
   }
   
   function setDefaultLanguage() {
